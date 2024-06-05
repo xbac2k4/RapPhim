@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_the_loai"
+        android:title="Thể Loại"
+        android:icon="@drawable/theloai_icon"/>
+    <item
+        android:id="@+id/nav_phim"
+        android:title="Phim"
+        android:icon="@drawable/phim_menu"/>
+    <item
+        android:id="@+id/nav_lich_chieu"
+        android:title="Lịch Chiếu"
+        android:icon="@drawable/lichchieu_icon"/>
+    <item
+        android:id="@+id/nav_ve_xem"
+        android:title="Vé Xem"
+        android:icon="@drawable/vexem_icon"/>
+</menu>

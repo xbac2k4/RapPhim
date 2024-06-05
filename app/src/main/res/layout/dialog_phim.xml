@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvThemPhim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Thêm Phim"
+                android:textAlignment="1"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!--            <TextView-->
+            <!--                android:id="@+id/tvUpdatePhim"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Update"-->
+            <!--                android:visibility="invisible"-->
+            <!--                android:textAlignment="1"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:textSize="20sp"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:layout_marginBottom="5dp"-->
+            <!--                android:textColor="#000000"/>-->
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:text="Loại Phim"
+            android:textColor="#000000" />
+
+        <Spinner
+            android:id="@+id/spnLoaiPhim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="5dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputAP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:hint="URL ảnh phim"
+            android:textColorHint="#80000000"
+            app:boxStrokeColor="@color/black"
+            app:errorTextColor="#FF0000"
+            app:hintTextColor="#000000"
+            app:startIconDrawable="@drawable/iconimg">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtAnhPhim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:hint="Nhập tên phim"
+            android:textColorHint="#80000000"
+            app:boxStrokeColor="@color/black"
+            app:errorTextColor="#FF0000"
+            app:hintTextColor="#000000"
+            app:startIconDrawable="@drawable/anhphim">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtTenPhim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputMT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:hint="Nhập mô tả"
+            android:textColorHint="#80000000"
+            app:boxStrokeColor="@color/black"
+            app:errorTextColor="#FF0000"
+            app:hintTextColor="#000000"
+            app:startIconDrawable="@drawable/mota">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtMoTa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputGV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:hint="Nhập giá vé"
+            android:textColorHint="#80000000"
+            app:boxStrokeColor="@color/black"
+            app:errorTextColor="#FF0000"
+            app:hintTextColor="#000000"
+            app:startIconDrawable="@drawable/giave">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtGiaVe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputKC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:hint="Nhập ngày khởi chiếu"
+            android:textColorHint="#80000000"
+            app:boxStrokeColor="@color/black"
+            app:errorTextColor="#FF0000"
+            app:hintTextColor="#000000"
+            app:startIconDrawable="@drawable/baseline_calendar_month_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtKhoiChieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHuy"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="Hủy"
+                android:textColor="#8692F7"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnThem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="Thêm"
+                android:textColor="#8692F7"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

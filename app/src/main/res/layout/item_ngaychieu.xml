@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    android:layout_gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:background="#25000000"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvNgayChieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20/11/2023"
+            android:textColor="#CD000000"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

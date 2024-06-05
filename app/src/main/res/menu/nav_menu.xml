@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Quản Lý">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_the_loai"
+                    android:title="Thể Loại"
+                    android:icon="@drawable/theloai_icon"/>
+                <item
+                    android:id="@+id/nav_phim"
+                    android:title="Phim"
+                    android:icon="@drawable/phim_menu"/>
+                <item
+                    android:id="@+id/nav_lich_chieu"
+                    android:title="Lịch Chiếu"
+                    android:icon="@drawable/lichchieu_icon"/>
+                <item
+                    android:id="@+id/nav_ve_xem"
+                    android:title="Vé Xem"
+                    android:icon="@drawable/vexem_icon"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Thống Kê">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/item_doanhthu"
+                    android:title="Doanh thu"
+                    android:icon="@drawable/doanhthu"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Khác">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_tai_khoan"
+                    android:title="Tài khoản"
+                    android:icon="@drawable/profile"/>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_dangxuat"
+        android:title="Đăng Xuất"
+        android:icon="@drawable/baseline_logout_24"/>
+
+</menu>
